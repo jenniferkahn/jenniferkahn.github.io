@@ -1,0 +1,320 @@
+/******************************************************************
+	
+	
+	@ Item          ASECTION // Personal One Page Portfolio HTML Template
+	@ Version       1.0
+	@ Author		Avanzare
+	@ Website		http://themeforest.net/user/avanzare 
+	
+
+ ******************************************************************
+
+
+	-----------------------------
+	----- TABLE OF CONTENTS -----
+	-----------------------------
+	
+	--  1. Icon Button
+	--  2. Work Grid
+	--  3. Testimonial Carousel
+	--  4. Image Box
+ 
+ 
+ ******************************************************************/
+
+
+
+/** 1. Icon Button
+*******************************************************************/
+
+.icon-button
+{
+    width: 5rem;
+    height: 5rem;
+    line-height: calc(5rem - 4px);
+    font-size: 1.3rem;
+    border-radius: 100%;
+    border: 1px solid rgba(255,255,255,.6);
+    color: #fff !important;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.icon-button:hover
+{
+    border: 1px solid rgba(255,255,255,1);
+}
+
+.icon-button span
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: inherit;
+    color: inherit !important;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+form.success .icon-button
+{
+    border-color: green !important;
+    color: green !important;
+    pointer-events: none;
+}
+
+
+
+/** 2. WORK GRID
+*******************************************************************/
+
+.work-grid
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    
+}
+
+.work-grid .item
+{
+    position: relative;
+    margin: 0 4rem;
+    opacity: 0.15;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.work-grid a
+{
+    position: relative;
+    display: block;
+}
+
+.work-grid .item .info-box
+{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.work-grid .item h2
+{
+    font-weight: 500;
+    line-height: 1.55em;
+}
+
+.work-grid .item:hover
+{
+    opacity: 1;
+}
+
+.hover-reveal 
+{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 48rem;
+    height: 30rem;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    pointer-events: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.work-grid .item:hover .hover-reveal 
+{
+    opacity: 0.9;
+}
+
+
+.hover-reveal-img
+{
+    width: 110%;
+    height: 110%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+
+
+/** 3. TESTIMONIAL CAROUSEL
+*******************************************************************/
+
+.testimonial-carousel .slick-list 
+{
+    padding: 0 !important;
+}
+
+.testimonial-carousel .item .quote
+{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.testimonial-carousel .item .marks
+{
+    line-height: 2rem;
+    font-size: 5rem;
+    font-weight: 300;
+    position: relative;
+}
+
+.testimonial-carousel .item .inner
+{
+    position: relative;
+}
+
+.testimonial-carousel .item .quote:after
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: 40px;
+    -webkit-transform: translateY(42%) rotate(45deg);
+        -ms-transform: translateY(42%) rotate(45deg);
+            transform: translateY(42%) rotate(45deg);
+    background: inherit;
+    border-radius: 3px;
+}
+
+.testimonial-carousel .arrow-prev
+{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    z-index: 4;
+    -webkit-transition: .1s ease;
+    -o-transition: .1s ease;
+    transition: .1s ease;
+}
+
+.testimonial-carousel .arrow-next
+{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0;
+    z-index: 4;
+    -webkit-transition: .1s ease;
+    -o-transition: .1s ease;
+    transition: .1s ease;
+}
+
+.testimonial-carousel .slick-arrow.slick-disabled
+{
+    opacity: 0;
+}
+
+.testimonial-carousel .slick-dots 
+{
+    bottom: -6rem;
+    text-align: center;
+}
+
+.testimonial-carousel .slick-dots li:first-child
+{
+    margin-left: 0;
+}
+
+
+
+/** 4. IMAGE BOX
+*******************************************************************/
+
+.img-hover-box
+{
+    position: absolute;
+    z-index: -2;
+    width: 50vh;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0.96;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.img-hover-box .img-wrapper
+{
+    position: relative;
+    z-index: -2;
+    width: 80%;
+    overflow: hidden;
+    height: 80%;
+}
+
+.img-hover-box .img
+{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    
+        -ms-transform: translate(-50%,-50%);
+    
+            transform: translate(-50%,-50%);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+    .img-hover-box
+    {
+        width: 60vw;
+        height: 80vw;
+    }
+}
